@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="system">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahih Sitta - Premium Hadith Archive</title>
+    <link rel="icon" href="/static/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;600;700&family=Amiri:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="loading">
+    <!-- Loading Overlay -->
+    <div id="loading-overlay">
+        <div class="loader-content">
+            <img src="/static/logo.png" alt="Loading..." class="loader-logo">
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="/static/logo.png" alt="Logo">
+            </div>
+            <div class="nav-actions">
+                <div class="theme-switcher">
+                    <button id="theme-light" data-theme="light">Light</button>
+                    <button id="theme-dark" data-theme="dark">Dark</button>
+                    <button id="theme-system" data-theme="system">System</button>
+                </div>
+                <div class="lang-switcher">
+                    <button id="lang-en" class="active">English</button>
+                    <button id="lang-bn">বাংলা</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1 id="hero-title">Explore the Authentic Traditions</h1>
+            <p id="hero-subtitle">Access the most reliable Hadith collections with ease and elegance.</p>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search Hadiths, Subjects, or Books...">
+                <button id="search-button">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="books-section">
+            <h2 id="section-books-title">Hadith Collections</h2>
+            <div id="books-grid" class="grid"></div>
+        </section>
+
+        <section id="hadiths-section" class="hidden">
+            <button id="back-button">← <span class="lang-en">Back to Books</span><span class="lang-bn hidden">বইয়ে ফিরে যান</span></button>
+            <h2 id="current-book-title"></h2>
+            <div id="hadiths-list"></div>
+        </section>
+
+        <section id="search-results-section" class="hidden">
+            <button id="clear-search"><span class="lang-en">Clear Search</span><span class="lang-bn hidden">অনুসন্ধান মুছে ফেলুন</span></button>
+            <h2 id="search-results-title">Search Results</h2>
+            <div id="search-results-list"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="/static/logo.png" alt="Logo">
+                </div>
+                <p class="dev-credit">
+                    Design and Develop by <a href="https://www.facebook.com/kafiabdullah.me" target="_blank">Kafi Abdullah</a>
+                </p>
+                <p class="copyright">© 2026 Sahih Sitta. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
